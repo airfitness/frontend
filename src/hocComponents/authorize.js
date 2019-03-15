@@ -54,6 +54,7 @@ const Authorize = props => {
   }
   return (
     <div className="authorize">
+    <h1>AirFitness</h1>
       <form onSubmit={props.handleAuth}>
         <div>register or login</div>
         <label>

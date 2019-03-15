@@ -29,9 +29,9 @@ const Login = props => {
       {(() => {
         switch (props.typeofmem) {
           case "instructor":
-            return <div> instructor login </div>;
+            return <h1> instructor login </h1>;
           case "user":
-            return <div> user login </div>;
+            return <h1> user login </h1>;
           default:
             return null;
         }
