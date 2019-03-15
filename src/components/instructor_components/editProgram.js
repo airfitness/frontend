@@ -85,15 +85,15 @@ class EditProgram extends Component {
     e.preventDefault();
     this.setState(prev => ({
       delete: !prev.delete
-    }))
-  }
+    }));
+  };
 
   render() {
     return (
       <div className="edit-program">
         Edit Program
         <form onSubmit={this.submitHandler}>
-          class name:
+          class name
           <input
             name="class_name"
             type="text"
@@ -102,7 +102,7 @@ class EditProgram extends Component {
             value={this.state.class_name}
             required
           />
-          times:
+          times
           <input
             name="times"
             type="text"
@@ -111,7 +111,7 @@ class EditProgram extends Component {
             value={this.state.times}
             required
           />
-          price:
+          price
           <input
             name="price"
             type="number"
@@ -120,7 +120,7 @@ class EditProgram extends Component {
             value={this.state.price}
             required
           />
-          location:
+          location
           <input
             name="location"
             type="text"
@@ -129,7 +129,7 @@ class EditProgram extends Component {
             value={this.state.location}
             required
           />
-          add additional type:
+          add additional type
           <input
             name="type"
             type="text"
@@ -138,8 +138,15 @@ class EditProgram extends Component {
             value={this.state.type}
           />
           <button onClick={this.submitHandler}>Edit Submit</button>
-          <button onClick={this.toggleDelete}>{this.state.delete ? 'cancel' : 'Delete Program'}</button>
-          {this.state.delete && <DeleteProgram deleteHandler={this.deleteHandler}  toggleDelete={this.state.toggleDelete} />}
+          <button onClick={this.toggleDelete}>
+            {this.state.delete ? "cancel" : "Delete Program"}
+          </button>
+          {this.state.delete && (
+            <DeleteProgram
+              deleteHandler={this.deleteHandler}
+              toggleDelete={this.state.toggleDelete}
+            />
+          )}
         </form>
       </div>
     );
