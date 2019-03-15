@@ -71,11 +71,7 @@ class User extends Component {
   render() {
     return (
       <div className="user">
-<<<<<<< HEAD
         <h1>Welcome {this.state.user.username}</h1>
-=======
-        <h1 className="title">User Component</h1>
->>>>>>> c59eed63312aea9a618b1e8b5d04c61be3dd1197
         {this.state.userInfo ? (
           <UserInfo userInfo={this.state.userInfo} />
         ) : (
