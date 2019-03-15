@@ -55,8 +55,8 @@ const Authorize = props => {
   return (
     <div className="authorize">
       <form onSubmit={props.handleAuth}>
-        <div>register or login</div>
-        <label>
+        <div className="registerOrLogin">register or login</div>
+        <label className="lable">
           <input
             name="register"
             type="radio"
@@ -66,7 +66,7 @@ const Authorize = props => {
           register
           <br />
         </label>
-        <label>
+        <label className="lable">
           <input
             name="register"
             type="radio"
@@ -77,8 +77,8 @@ const Authorize = props => {
           <br />
         </label>
 
-        <div>instructor or user</div>
-        <label>
+        <div className="instructorOrUser">instructor or user</div>
+        <label className="lable">
           <input
             name="typeofmem"
             type="radio"
@@ -88,7 +88,7 @@ const Authorize = props => {
           instructor
           <br />
         </label>
-        <label>
+        <label className="lable">
           <input
             name="typeofmem"
             type="radio"
