@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Axios from "axios";
-import "./user_styles/punchCard.css";
 
 class PunchCard extends Component {
   constructor(props) {

@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Axios from "axios";
 import ProgramsList from "./programsList";
 import UserInfo from "./userInfo";
-import "./user_styles/user.css";
 
 class User extends Component {
   constructor(props) {
