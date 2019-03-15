@@ -6,7 +6,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: black;
+  /* background: black; */
+  background-image: url(img/black-and-white-sport-wheel-train-dark-training-1376234-pxhere.com.jpg);
+  background-size: 100vw;
   color: white;
 }
 
