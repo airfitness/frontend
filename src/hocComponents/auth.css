@@ -1,10 +1,24 @@
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(35%);
+    }
+  }
+
 .authorize {
+    animation: 1s ease-out 0s 1 fadeIn;
+    border: 1px solid white;
     background: rgba(46, 42, 46, 0.781);
     max-width: 600px;
     margin: 30px auto;
     padding: 40px;
     border-radius: 3px;
     line-height: 2;
+    transform: translateY(35%);
 }
 
 .authorize form {
@@ -21,6 +35,9 @@
 }
 
 .login {
+    transform: translateY(35%);
+    animation: 1s ease-out 0s 1 fadeIn;
+    border: 1px solid white;
     background: rgba(46, 42, 46, 0.781);
     max-width: 600px;
     margin: 30px auto;
@@ -54,6 +71,9 @@
 /*  Register */
 
 .register {
+    transform: translateY(35%);
+    animation: 1s ease-out 0s 1 fadeIn;
+    border: 1px solid white;
     background: rgba(46, 42, 46, 0.781);
     max-width: 600px;
     margin: 30px auto;
