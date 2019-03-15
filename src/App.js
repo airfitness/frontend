@@ -9,6 +9,7 @@ import "./hocComponents/css/login.css";
 import "./hocComponents/css/register.css";
 import "./components/instructor_components/css/instructor.css";
 
+
 class App extends Component {
   constructor(props) {
     super(props);

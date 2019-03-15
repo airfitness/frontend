@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Axios from "axios";
+import "./user_styles/punchCard.css";
 
 class PunchCard extends Component {
   constructor(props) {
@@ -41,7 +42,6 @@ class PunchCard extends Component {
   render() {
     return (
       <div className="purchase">
-        purchase punch card:
         <button onClick={this.submitHandler}>Purchase</button>
       </div>
     );
