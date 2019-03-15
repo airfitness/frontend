@@ -1,0 +1,92 @@
+.instructor h1 {
+  display: flex;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2.5rem;
+  height: 50px;
+  color: white;
+  cursor: pointer;
+  letter-spacing: 0.2rem;
+  padding: 0 1.25rem 0 1.35rem;
+  text-transform: uppercase;
+  justify-content: center;
+  background-color: #8278787e;
+  border-radius: 3px;
+}
+
+.instructor .programList {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2.5rem;
+  height: 50px;
+  color: white;
+  cursor: pointer;
+  letter-spacing: 0.2rem;
+  padding: 0 1.25rem 0 1.35rem;
+  text-transform: uppercase;
+  justify-content: center;
+  background-color: #8278787e;
+  border-radius: 3px;
+}
+
+.instructor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.instructor button {
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 259px;
+}
+
+.instructor h2 {
+  display: flex;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  justify-content: center;
+  background-color: #8278785b;
+}
+
+.instructor input {
+  display: flex;
+  margin: 10px 0 10px 0;
+  border-radius: 3px;
+  width: 250px;
+  text-align: left;
+}
+
+.instructor form {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  text-align: left;
+  text-emphasis: center;
+  padding-left: 28px;
+  margin: 20px 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.instructor .edit-program {
+  border: solid 1px red;
+}
+
+.edit-program form {
+  border: solid 1px red;
+}
+
+.programs h3 {
+  background-color: #8278785b;
+  display: flex;
+  justify-content: center;
+}
+
+.program .program-details {
+  border: solid 1px red;
+  display: flex;
+  justify-content: center;
+}

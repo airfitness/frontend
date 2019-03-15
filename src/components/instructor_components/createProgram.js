@@ -56,7 +56,7 @@ class CreateProgram extends Component {
       <div className="create-program">
         <h2>Create Program</h2>
         <form onSubmit={this.submitHandler}>
-          class name:
+          class name
           <input
             name="class_name"
             type="text"
@@ -65,7 +65,7 @@ class CreateProgram extends Component {
             value={this.state.class_name}
             required
           />
-          times:
+          times
           <input
             name="times"
             type="text"
@@ -74,7 +74,7 @@ class CreateProgram extends Component {
             value={this.state.times}
             required
           />
-          price:
+          price
           <input
             name="price"
             type="number"
@@ -83,7 +83,7 @@ class CreateProgram extends Component {
             value={this.state.price}
             required
           />
-          location:
+          location
           <input
             name="location"
             type="text"
@@ -92,7 +92,7 @@ class CreateProgram extends Component {
             value={this.state.location}
             required
           />
-          type of class:
+          type of class
           <input
             name="types"
             type="text"

@@ -10,8 +10,8 @@ class Instructor extends Component {
       user: props.user,
       programs: [],
       isCreate: false,
-      edit: '',
-      delete: '',
+      edit: "",
+      delete: ""
     };
   }
   componentDidMount() {
@@ -31,34 +31,41 @@ class Instructor extends Component {
   };
 
   toggleCreate = e => {
-    e.preventDefault()
+    e.preventDefault();
     this.setState(prev => ({
       isCreate: !prev.isCreate
-    }))
-  }
+    }));
+  };
 
   toggleEdit = (e, id) => {
-    e.preventDefault()
+    e.preventDefault();
     this.setState(prev => ({
-      edit: id === prev.edit ? '' : id
-    }))
-  }
+      edit: id === prev.edit ? "" : id
+    }));
+  };
 
   toggleDelete = (e, id) => {
-    e.preventDefault()
+    e.preventDefault();
     this.setState(prev => ({
-      delete: id === prev.delete ? '' : id
-    }))
-  }
-
+      delete: id === prev.delete ? "" : id
+    }));
+  };
 
   render() {
     return (
       <div className="instructor">
         <h1>Instructor Component</h1>
-        <button onClick={this.toggleCreate}>{this.state.isCreate ? 'X' : 'Create a new Program'}</button>
-        {this.state.isCreate && <CreateProgram user={this.state.user} refresh={this.refresh} />}
-        <div> List of current Programs: </div>
+        <button onClick={this.toggleCreate}>
+          {this.state.isCreate ? "X" : "Create a new Program"}
+        </button>
+        {this.state.isCreate && (
+          <CreateProgram
+            className="createProgram"
+            user={this.state.user}
+            refresh={this.refresh}
+          />
+        )}
+        <div className="programList"> List of current Programs: </div>
         <Programs
           programs={this.state.programs}
           refresh={this.refresh}

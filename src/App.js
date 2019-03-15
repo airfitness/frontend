@@ -1,9 +1,14 @@
 import React, { Component } from "react";
 import "./App.css";
-import './components/user_components/users.css';
-import './hocComponents/auth.css';
+import "./components/user_components/users.css";
+import "./hocComponents/auth.css";
 import Instructor from "./components/instructor_components/instructor";
 import User from "./components/user_components/user";
+import "./hocComponents/css/authorize.css";
+import "./hocComponents/css/login.css";
+import "./hocComponents/css/register.css";
+import "./components/instructor_components/css/instructor.css";
+
 
 class App extends Component {
   constructor(props) {

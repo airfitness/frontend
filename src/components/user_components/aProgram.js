@@ -1,6 +1,7 @@
 import React from "react";
 import Atype from "./aType";
 import PunchCard from "./punchCard";
+import "./user_styles/aProgram.css";
 
 const Aprogram = props => {
   const words = ['fitness', 'hiking', 'yoga', 'running', 'swim', 'strong', 'flexible', 'strength', 'jogging', 'gym'];
