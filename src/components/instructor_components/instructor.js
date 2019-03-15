@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import Programs from "./programs";
 import CreateProgram from "./createProgram";
+import InstructorChange from "./instructorChange";
 
 class Instructor extends Component {
   constructor(props) {
@@ -11,7 +12,8 @@ class Instructor extends Component {
       programs: [],
       isCreate: false,
       edit: "",
-      delete: ""
+      delete: "",
+      instructorInfo: null
     };
   }
   componentDidMount() {
@@ -20,7 +22,8 @@ class Instructor extends Component {
       .get(`https://airfitness.herokuapp.com/api/instructors/${Id}`)
       .then(res =>
         this.setState({
-          programs: res.data.classes
+          programs: res.data.classes,
+          instructorInfo: res.data
         })
       )
       .catch(error => console.log(error));
@@ -55,6 +58,15 @@ class Instructor extends Component {
     return (
       <div className="instructor">
         <h1>Welcome {this.state.user.username}</h1>
+        {this.state.instructorInfo ? (
+          <InstructorChange
+            instructorInfo={this.state.instructorInfo}
+            user={this.state.user}
+            refresh={this.refresh}
+          />
+        ) : (
+          <></>
+        )}
         <button onClick={this.toggleCreate}>
           {this.state.isCreate ? "Cancel" : "Create a new Program"}
         </button>

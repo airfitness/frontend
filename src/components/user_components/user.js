@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Axios from "axios";
 import ProgramsList from "./programsList";
 import UserInfo from "./userInfo";
+import UserChange from "./userChange";
 
 class User extends Component {
   constructor(props) {
@@ -71,6 +72,15 @@ class User extends Component {
     return (
       <div className="user">
         <h1>Welcome {this.state.user.username}</h1>
+        {this.state.userInfo ? (
+          <UserChange
+            userInfo={this.state.userInfo}
+            user={this.state.user}
+            refresh={this.refresh}
+          />
+        ) : (
+          <></>
+        )}
         {this.state.userInfo ? (
           <UserInfo userInfo={this.state.userInfo} />
         ) : (
