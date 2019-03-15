@@ -16,16 +16,11 @@ const Program = props => {
   return (
     <div className="program">
       <h3>Program/class</h3>
-      <ProgramPunches
-        id={props.program.id}
-        user={props.user}
-        refresh={props.refresh}
-      />
       <div className="program-details">
-        class name: {props.program.class_name}
-        class times: {props.program.times}
-        class price: {props.program.price}
-        class location: {props.program.location}
+      <p className="title">{props.program.class_name}</p>
+        <p>times: {props.program.times}</p>
+        <p>price: {props.program.price}</p>
+        <p>location: {props.program.location}</p>
         <br />
         <div className="types">
         {props.program.types.map(type => (
@@ -33,12 +28,17 @@ const Program = props => {
         ))}
         </div>
       </div>
-      <button onClick={(e) => props.toggleEdit(e, props.program.id)}>{props.edit === props.program.id ? 'x' : 'Edit Program'}</button>
+      <button onClick={(e) => props.toggleEdit(e, props.program.id)}>{props.edit === props.program.id ? 'cancel' : 'Edit Program'}</button>
       {props.edit === props.program.id && <EditProgram
         program={props.program}
         refresh={props.refresh}
         user={props.user}
       />}
+      <ProgramPunches
+        id={props.program.id}
+        user={props.user}
+        refresh={props.refresh}
+      />
     </div>
   );
 };

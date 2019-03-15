@@ -54,9 +54,9 @@ class Instructor extends Component {
   render() {
     return (
       <div className="instructor">
-        <h1>Instructor Component</h1>
+        <h1>Welcome {this.state.user.username}</h1>
         <button onClick={this.toggleCreate}>
-          {this.state.isCreate ? "X" : "Create a new Program"}
+          {this.state.isCreate ? "Cancel" : "Create a new Program"}
         </button>
         {this.state.isCreate && (
           <CreateProgram
@@ -65,7 +65,6 @@ class Instructor extends Component {
             refresh={this.refresh}
           />
         )}
-        <div className="programList"> List of current Programs: </div>
         <Programs
           programs={this.state.programs}
           refresh={this.refresh}

@@ -1,36 +1,22 @@
-.instructor h1 {
-  display: flex;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 2.5rem;
-  height: 50px;
-  color: white;
-  cursor: pointer;
-  letter-spacing: 0.2rem;
-  padding: 0 1.25rem 0 1.35rem;
-  text-transform: uppercase;
-  justify-content: center;
-  background-color: #8278787e;
-  border-radius: 3px;
-}
-
-.instructor .programList {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 2.5rem;
-  height: 50px;
-  color: white;
-  cursor: pointer;
-  letter-spacing: 0.2rem;
-  padding: 0 1.25rem 0 1.35rem;
-  text-transform: uppercase;
-  justify-content: center;
-  background-color: #8278787e;
-  border-radius: 3px;
-}
-
 .instructor {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  max-width: 1000px;
+  margin: 20px auto;
+  background: rgba(46, 42, 46, 0.781);
+  padding: 30px;
+  border-radius: 3px;
+}
+
+.instructor h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2.5rem;
+  height: 50px;
+  color: white;
+  letter-spacing: 0.2rem;
+  padding: 0 1.25rem 0 1.35rem;
+  text-transform: uppercase;
+  justify-content: center;
+  background-color: #8278787e;
+  border-radius: 3px;
 }
 
 .instructor button {
@@ -40,11 +26,9 @@
 }
 
 .instructor h2 {
-  display: flex;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 2rem;
   color: white;
-  cursor: pointer;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   justify-content: center;
@@ -52,7 +36,6 @@
 }
 
 .instructor input {
-  display: flex;
   margin: 10px 0 10px 0;
   border-radius: 3px;
   width: 250px;
@@ -71,6 +54,14 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.488);
 }
 
+.instructor .create-program {
+  background: rgba(46, 42, 46, 0.781);
+  border: 1px solid white;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding: 30px;
+}
+
 .instructor .edit-program {
 }
 
@@ -79,11 +70,46 @@
 
 .instructor .programs h3 {
   background-color: #8278785b;
-  display: flex;
-  justify-content: center;
 }
 
 .instructor .program .program-details {
+
+}
+
+.instructor .program .program-details p{
+  border-bottom: 1px dotted white;
+}
+
+.instructor .program .program-details .title {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.instructor .types {
   display: flex;
-  justify-content: center;
+  margin: 10px 20px 10px 0;
+  text-align: center;
+}
+
+.instructor .types button {
+  width: 80%;
+  padding: 2px;
+  margin: 10px;
+}
+
+.instructor .types .type {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100px;
+  border: 1px solid white;
+  border-radius: 3px;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.programs .Punch-cards .punchCard {
+  background: rgba(54, 45, 54, 0.678);
+  padding: 20px;
+  border-bottom: 1px solid white;
 }
