@@ -13,7 +13,7 @@ const Programs = props => {
   // render() {
   return (
     <div className="programs">
-      <h3>programs list:</h3>
+      <h3>Your programs:</h3>
       {props.programs.map(program => (
         <Program program={program} user={props.user} refresh={props.refresh}
         toggleEdit={props.toggleEdit}

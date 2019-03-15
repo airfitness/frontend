@@ -34,11 +34,10 @@ class Type extends Component {
   render() {
     return (
       <div className="type">
-        <div>type: {this.props.type.type}</div><button onClick={this.toggleDel}>{this.state.typeDelete ? 'cancel' : 'X'}</button>
+        <div>{this.props.type.type}</div><button onClick={this.toggleDel}>{this.state.typeDelete ? 'cancel' : 'remove'}</button>
         {this.state.typeDelete && <DeleteType
           id={this.props.type.id}
           deleteHandler={this.deleteHandler}
-          toggleDel={this.toggleDel}
         />}
       </div>
     );
