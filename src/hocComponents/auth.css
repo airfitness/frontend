@@ -1,0 +1,52 @@
+.authorize {
+    background: rgba(46, 42, 46, 0.781);
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 40px;
+    border-radius: 3px;
+    line-height: 2;
+}
+
+.authorize form {
+    margin: 10px 0;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+
+.authorize h1 {
+    letter-spacing: 5px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.login {
+    background: rgba(46, 42, 46, 0.781);
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 40px;
+    border-radius: 3px;
+    line-height: 2;
+}
+
+.login form {
+    margin: 10px 0;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+
+.login h1 {
+    letter-spacing: 5px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.login input {
+    font-size: 2rem;
+}
+
+.login button {
+    margin: 10px 0;
+    display: block;
+}

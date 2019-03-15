@@ -6,10 +6,10 @@ const Aprogram = props => {
   return (
     <div className="program">
       <div className="program-details">
-        class name: {props.aProgram.class_name}
-        class times: {props.aProgram.times}
-        class price: {props.aProgram.price}
-        class location: {props.aProgram.location}
+        <p>class name: {props.aProgram.class_name}</p>
+        <p>class times: {props.aProgram.times}</p>
+        <p>class price: {props.aProgram.price}</p>
+        <p>class location: {props.aProgram.location}</p>
         <br />
         {props.aProgram.types.map(aType => (
           <Atype aType={aType} />

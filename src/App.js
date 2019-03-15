@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
+import './components/user_components/users.css';
+import './hocComponents/auth.css';
 import Instructor from "./components/instructor_components/instructor";
 import User from "./components/user_components/user";
 
