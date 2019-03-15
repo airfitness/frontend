@@ -50,3 +50,36 @@
     margin: 10px 0;
     display: block;
 }
+
+/*  Register */
+
+.register {
+    background: rgba(46, 42, 46, 0.781);
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 40px;
+    border-radius: 3px;
+    line-height: 2;
+}
+
+.register form {
+    margin: 10px 0;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+
+.register h1 {
+    letter-spacing: 5px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.register input {
+    font-size: 2rem;
+}
+
+.register button {
+    margin: 10px 0;
+    display: block;
+}
