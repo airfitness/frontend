@@ -70,7 +70,7 @@ class User extends Component {
   render() {
     return (
       <div className="user">
-        <h1>User Component</h1>
+        <h1>Welcome {this.state.user.username}</h1>
         {this.state.userInfo ? (
           <UserInfo userInfo={this.state.userInfo} />
         ) : (

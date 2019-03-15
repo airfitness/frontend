@@ -42,6 +42,8 @@
     width: 100%;
     border-top: 2px solid white;
     padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .user .program .program-details p{
@@ -51,6 +53,16 @@
 .user .program .program-details .title {
     text-transform: uppercase;
     font-weight: 600;
+}
+
+.user .program .post-photo {
+    max-width: 400px;
+    width: 40%;
+    max-height: 300px;
+}
+
+.user .program .words {
+    width: 58%;
 }
 
 .user .search-bars {
@@ -66,7 +78,10 @@
 }
 
 .user .programs h3 {
+    background: rgba(46, 42, 46, 0.781);
+    border-radius: 3px;
     font-size: 3rem;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 2.5px;
     text-decoration: underline;

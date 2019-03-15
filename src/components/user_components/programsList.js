@@ -4,7 +4,7 @@ import Aprogram from "./aProgram";
 const ProgramsList = props => {
   return (
     <div className="programs">
-      <h3>programs list:</h3>
+      <h3>available programs:</h3>
       {props.programsList.map(aProgram => (
         <Aprogram
           aProgram={aProgram}
