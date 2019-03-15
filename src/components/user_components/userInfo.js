@@ -1,6 +1,5 @@
 import React from "react";
 import UserPunch from "./userPunch";
-import "./user_styles/userInfo.css";
 
 // class UserInfo extends Component {
 //   constructor(props) {

@@ -1,5 +1,4 @@
 import React from "react";
-import "./user_styles/userPunch.css";
 
 const UserPunch = props => {
   return (

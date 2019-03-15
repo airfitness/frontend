@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Axios from "axios";
 import ProgramsList from "./programsList";
 import UserInfo from "./userInfo";
-import "./user_styles/user.css";
 
 class User extends Component {
   constructor(props) {
@@ -71,7 +70,7 @@ class User extends Component {
   render() {
     return (
       <div className="user">
-        <h1 className="title">User Component</h1>
+        <h1>Welcome {this.state.user.username}</h1>
         {this.state.userInfo ? (
           <UserInfo userInfo={this.state.userInfo} />
         ) : (
